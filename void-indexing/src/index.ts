@@ -1,3 +1,6 @@
+// Export main API
+export * from './voidIndexing';
+
 // Export indexing modules
 export * from './index/tfIdf';
 
@@ -12,7 +15,7 @@ export * from './ast/astParser';
 export * from './ranking/contextRanker';
 
 // Export storage modules
-export * from './storage/cacheStrategy';
+export * from './storage/storageAdapter';
 export * from './storage/indexStructure';
 
 // Export query modules
@@ -26,6 +29,19 @@ export * from './processing/pipeline';
 
 // Export utility modules
 export * from './utils/cancellation';
+
+// Export embedding modules
+export * from './embeddings/embeddingService';
+
+// Export search modules
+export * from './search/semanticSearch';
+
+// Export chunking modules
+export * from './chunking/chunkingStrategy';
+export * from './chunking/astChunkingStrategy';
+
+// Export prompt modules
+export * from './prompts/promptBuilder';
 
 /**
  * Version of the library
